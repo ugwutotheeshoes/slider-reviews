@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React from 'react';
 import { FaQuoteRight } from 'react-icons/fa';
 import people from './data';
 
