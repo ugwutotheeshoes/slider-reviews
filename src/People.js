@@ -2,7 +2,7 @@ import React from 'react';
 import { FaQuoteRight } from 'react-icons/fa';
 import people from './data';
 
-const People = ({id, image, name, title, quote, personIndex, index, setIndex}) => {
+const People = ({id, image, name, title, quote, personIndex, index}) => {
     
     let position = "nextSlide";
     if(personIndex === index){

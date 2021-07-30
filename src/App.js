@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1)
-    }, 5000);
+    }, 3000);
     return () => clearInterval(slider)
   }, [index])
     
@@ -33,7 +33,7 @@ function App() {
   </div>
   <div className="section-center">
   {people.map((person, personIndex) => {
-        return <People key={person.id} {...person} personIndex={personIndex} index={index} setIndex={setIndex}></People>
+        return <People key={person.id} {...person} personIndex={personIndex} index={index} />
   })}
   <button className="prev" onClick={() => setIndex(index - 1)}>
     <FiChevronLeft />
